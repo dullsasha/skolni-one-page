@@ -1,42 +1,45 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #b3acac;
+    background-color: #b3acac; /* Barva pozadí */
 }
+
+/* Hlavička + pozadí s obrázkem */
 header {
-    background: #a6acb1;
+    background: url('/images/skola1.PNG') no-repeat, #004b8d; /* Obrázek + fallback barva */
+    background-size: 120% auto; /* Zvětšení šířky backgroundu */
     color: white;
     padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: url('/images/skola1.PNG') no-repeat , #004b8d;
-    background-size: 120% auto;
-    
-
+    display: flex; /* Logo + text vedle sebe */
+    align-items: center; /* Vertikální zarovnání */
+    gap: 10px; /* Mezera mezi logem a textem */
 }
 
-header img{
-    height: 120px;
+header img {
+    height: 120px; /* Velikost loga */
 }
 
 header h1 {
-    margin: 0;
+    margin: 0; /* Odstranění mezer okolo nadpisu */
 }
+
+/* Navigační lišta */
 nav {
-    background: #000000;
+    background: #000000; /* Černé pozadí */
     padding: 10px 40px;
-    background: #000000;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Zarovnání odkazů doprostřed */
     gap: 20px;
 }
+
 nav a {
     color: white;
     margin-right: 20px;
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Úvodní banner */
 .hero {
     background: url('https://via.placeholder.com/1600x400') center/cover no-repeat;
     height: 300px;
@@ -44,29 +47,36 @@ nav a {
     justify-content: center;
     align-items: center;
     color: rgb(253, 253, 253);
-    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Stín textu */
     font-size: 2rem;
     font-weight: bold;
 }
+
+/* Obsahové sekce */
 .content-section {
     padding: 40px;
     background: white;
     margin: 20px auto;
     max-width: 1200px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Karty v gridu */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
 .card {
     background: #e9f1f8;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Spodní část stránky */
 footer {
     background: #000000;
     color: white;
