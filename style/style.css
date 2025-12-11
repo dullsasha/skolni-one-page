@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #b3acac;
 }
 header {
     background: #a6acb1;
@@ -10,7 +10,9 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: url('/images/skola1.jpg') no-repeat, #004b8d;
+    background: url('/images/skola1.PNG') no-repeat , #004b8d;
+    background-size: 120% auto;
+    
 
 }
 
@@ -41,7 +43,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(253, 253, 253);
     text-shadow: 0 2px 5px rgba(0,0,0,0.5);
     font-size: 2rem;
     font-weight: bold;
